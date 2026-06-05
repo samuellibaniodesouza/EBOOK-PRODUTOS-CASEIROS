@@ -39,15 +39,21 @@ section{padding:64px 0}.section-title{text-align:center;font-size:39px;line-heig
 .reveal{opacity:0;transform:translateY(22px);transition:.65s}.reveal.show{opacity:1;transform:none}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}@keyframes ctaPulse{0%,100%{box-shadow:0 0 28px rgba(0,255,136,.48),inset 0 -4px 0 rgba(0,0,0,.18)}50%{box-shadow:0 0 48px rgba(0,255,136,.85),inset 0 -4px 0 rgba(0,0,0,.18)}}@keyframes pulseGlow{0%,100%{box-shadow:0 0 14px rgba(255,215,0,.16)}50%{box-shadow:0 0 32px rgba(255,215,0,.38)}}
 
-.mobile-sticky-cta{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;background:linear-gradient(135deg,#00ff88,#00d26f);color:#03110b;text-align:center;font-weight:1000;padding:15px 16px;border-radius:16px;box-shadow:0 0 38px rgba(0,255,136,.65),0 10px 34px rgba(0,0,0,.38);animation:ctaPulse 1.9s infinite}.mobile-sticky-cta small{display:block;font-size:11px;font-weight:900;opacity:.85}
-@media(max-width:980px){.hero{min-height:auto;text-align:center;padding:52px 0}.hero-grid,.grid{grid-template-columns:1fr}.hero h1{font-size:39px}.hero p{font-size:18px;margin-left:auto;margin-right:auto}.bullets{justify-content:center}.section-title{font-size:30px}.price{font-size:62px}.mock img{max-width:610px}.topbar{font-size:12px;padding:8px 8px;gap:6px}.timer{flex-direction:column;gap:4px}.card:hover{transform:none}}@media(max-width:760px){.mobile-sticky-cta{display:block}body{padding-bottom:82px}}@media(max-width:520px){.topbar{font-size:11px;gap:5px;padding:7px 6px;letter-spacing:.15px}.topbar-reserve{display:none}.topbar strong{padding:3px 8px}.hero{padding-top:42px}.badge{font-size:14px}.hero h1{font-size:34px}.chip{font-size:14px}}
+
+@media(max-width:980px){.hero{min-height:auto;text-align:center;padding:52px 0}.hero-grid,.grid{grid-template-columns:1fr}.hero h1{font-size:39px}.hero p{font-size:18px;margin-left:auto;margin-right:auto}.bullets{justify-content:center}.section-title{font-size:30px}.price{font-size:62px}.mock img{max-width:610px}.topbar{font-size:12px;padding:8px 8px;gap:6px}.timer{flex-direction:column;gap:4px}.card:hover{transform:none}}@media(max-width:760px){body{padding-bottom:82px}}@media(max-width:520px){.topbar{font-size:11px;gap:5px;padding:7px 6px;letter-spacing:.15px}.topbar-reserve{display:none}.topbar strong{padding:3px 8px}.hero{padding-top:42px}.badge{font-size:14px}.hero h1{font-size:34px}.chip{font-size:14px}}
 
 .mobile-cta{display:none}
 @media(max-width:768px){
-.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#08111f;padding:10px;border-top:1px solid rgba(255,255,255,.1);justify-content:center}
+.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#08111f;padding:10px;border-top:1px solid rgba(255,255,255,.1);justify-content:center;box-shadow:0 -8px 22px rgba(8,17,31,.96)}
 .mobile-cta a{background:#00ff88;color:#000;padding:14px 18px;border-radius:12px;font-weight:900;width:92%;text-align:center}
 body{padding-bottom:80px}
 }
+
+.social-proof{padding:30px 0}.social-proof h2{text-align:center;font-size:clamp(28px,5vw,42px);margin-bottom:10px}.proof-sub{max-width:760px;margin:0 auto 16px;text-align:center;color:#dbeafe;font-size:clamp(15px,2.6vw,18px);line-height:1.45}.proof-highlight{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:0 auto 18px}.proof-highlight span{display:inline-flex;align-items:center;gap:6px;padding:8px 11px;border-radius:999px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.22);color:#eaf2ff;font-size:13px;font-weight:800}.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.proof-grid img{width:100%;height:auto;border-radius:18px;border:1px solid rgba(255,255,255,.08)}.proof-note{max-width:760px;margin:15px auto 0;text-align:center;color:#cbd5e1;font-size:14px;line-height:1.45}.live-counter{margin-top:12px;text-align:center;color:#cfd3d8;font-size:13px}.live-dot{display:inline-block;width:8px;height:8px;background:#ff3b30;border-radius:50%;margin-right:6px;animation:pulse 1.2s infinite}@keyframes pulse{50%{opacity:.35}}@media(max-width:768px){.proof-grid{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding-bottom:8px}.proof-grid img{min-width:78%;scroll-snap-align:center}}
+
+.feature-card{cursor:pointer;user-select:none}.feature-card:focus{outline:2px solid rgba(0,255,136,.55);outline-offset:3px}.feature-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.feature-head h3{margin-bottom:0}.feature-toggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;border-radius:999px;background:rgba(0,255,136,.12);border:1px solid rgba(0,255,136,.35);color:#00ff88;font-weight:1000;font-size:20px;line-height:1;transition:.22s}.feature-card>p{margin-top:8px}.feature-more{max-height:0;overflow:hidden;opacity:0;transition:max-height .32s ease,opacity .25s ease,margin-top .25s ease}.feature-card.open .feature-more{max-height:420px;opacity:1;margin-top:16px}.feature-card.open .feature-toggle{transform:rotate(45deg);background:rgba(255,215,0,.13);border-color:rgba(255,215,0,.45);color:#ffd700}.feature-more ul{display:grid;gap:7px;list-style:none;margin:0 0 14px;padding:0}.feature-more li{color:#eaf2ff;font-size:15px;line-height:1.25}.feature-trigger{background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.22);border-radius:14px;padding:12px;color:#dbeafe;font-size:14px;line-height:1.35}@media(max-width:768px){.feature-grid{gap:14px}.feature-card{padding:22px}.feature-card.open .feature-more{max-height:520px}.feature-more li{font-size:14px}.feature-trigger{font-size:13px}}
+
+.package-grid .package-card{cursor:pointer}.package-card .feature-more li{font-size:14px}.package-card .feature-trigger{font-size:13px}@media(max-width:768px){.package-grid{gap:14px}.package-card{padding:22px}.package-card .feature-more li{font-size:14px}}
 </style>
 
   <script type="text/javascript">
@@ -73,8 +79,7 @@ body{padding-bottom:80px}
         <span class="chip">🎁 7 materiais</span>
         <span class="chip">💰 Preço simbólico</span>
       </div>
-      <div class="timer"><small>Oferta reservada nesta visita</small><b id="heroCountdown">60:00</b></div><br>
-      <a class="cta" href="https://pay.kiwify.com.br/UECL5zj">QUERO COMEÇAR POR R$14,99</a>
+      <a class="cta" href="https://pay.kiwify.com.br/UECL5zj">QUERO COMEÇAR POR R$14,99</a><div class="live-counter"><span class="live-dot"></span><span id="liveCount">8</span> pessoas visualizando esta oferta agora</div>
       <div class="mini">Compra segura pela Kiwify • Garantia de 7 dias • Produto 100% digital</div>
     </div>
     <div class="mock"><img src="images/metodo-fabrica-natural-mockup.png" alt="Mockup 3D Método Fábrica Natural"></div>
@@ -85,10 +90,51 @@ body{padding-bottom:80px}
   <div class="container reveal">
     <h2 class="section-title">Pare de procurar receita solta.</h2>
     <p class="sub">Tenha tudo organizado em uma coleção simples, visual e direta.</p>
-    <div class="grid">
-      <div class="card"><h3>🧴 Cosméticos</h3><p>Shampoo, sabonete, hidratante e condicionador.</p></div>
-      <div class="card"><h3>🧼 Limpeza</h3><p>Detergente, multiuso, amaciante e sabão líquido.</p></div>
-      <div class="card"><h3>🌸 Casa Perfumada</h3><p>Home spray, difusor, sachê e água perfumada.</p></div>
+    <div class="grid feature-grid">
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🧴 Cosméticos</h3><span class="feature-toggle">+</span></div>
+        <p>Shampoo, sabonete, hidratante e condicionador.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Shampoo natural</li>
+            <li>✔ Sabonete líquido</li>
+            <li>✔ Hidratante corporal</li>
+            <li>✔ Condicionador</li>
+            <li>✔ Receitas fáceis de fazer em casa</li>
+            <li>✔ Ingredientes acessíveis</li>
+          </ul>
+          <div class="feature-trigger">💡 Você pode economizar centenas de reais por ano produzindo seus próprios cosméticos.</div>
+        </div>
+      </div>
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🧼 Limpeza</h3><span class="feature-toggle">+</span></div>
+        <p>Detergente, multiuso, amaciante e sabão líquido.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Detergente</li>
+            <li>✔ Multiuso</li>
+            <li>✔ Amaciante</li>
+            <li>✔ Sabão líquido</li>
+            <li>✔ Desinfetante</li>
+            <li>✔ Limpa pisos</li>
+          </ul>
+          <div class="feature-trigger">💡 Muitos alunos recuperam o valor investido apenas substituindo produtos comprados no mercado.</div>
+        </div>
+      </div>
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🌸 Casa Perfumada</h3><span class="feature-toggle">+</span></div>
+        <p>Home spray, difusor, sachê e água perfumada.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Água perfumada</li>
+            <li>✔ Home spray</li>
+            <li>✔ Difusor de ambientes</li>
+            <li>✔ Sachês aromáticos</li>
+            <li>✔ Aromatizadores para tecidos</li>
+          </ul>
+          <div class="feature-trigger">💡 Transforme qualquer ambiente da casa em um espaço mais agradável e perfumado usando ingredientes simples.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -96,7 +142,23 @@ body{padding-bottom:80px}
 <section class="dark">
   <div class="container reveal">
     <div class="snap">
-      <h2>Por menos que um lanche, você desbloqueia <span class="neon">7 materiais digitais</span>.</h2>
+      <h2>
+<section class="social-proof container">
+<h2>Resultados Reais de Quem Já Colocou em Prática</h2>
+<p class="proof-sub">Veja o que nossas alunas estão produzindo em casa com receitas simples, econômicas e fáceis de colocar em prática.</p>
+<div class="proof-highlight">
+  <span>🏠 Produção caseira</span>
+  <span>💰 Economia real</span>
+  <span>💚 Receitas naturais</span>
+</div>
+<div class="proof-grid">
+<img loading="lazy" src="images/prova-social-1.png" alt="Prova social 1">
+<img loading="lazy" src="images/prova-social-2.png" alt="Prova social 2">
+<img loading="lazy" src="images/prova-social-3.jpg" alt="Prova social 3">
+</div>
+<div class="proof-note">Depoimentos simples para mostrar o resultado na prática: casa perfumada, limpeza caseira e produtos feitos no dia a dia.</div>
+</section>
+Por menos que um lanche, você desbloqueia <span class="neon">7 materiais digitais</span>.</h2>
       <p>Feito para quem quer economizar, testar uma renda extra ou começar uma produção artesanal sem investir alto.</p>
     </div>
   </div>
@@ -105,13 +167,91 @@ body{padding-bottom:80px}
 <section>
   <div class="container reveal">
     <h2 class="section-title">O que vem no pacote?</h2>
-    <div class="grid">
-      <div class="card"><h3>📘 Guia 1</h3><p>Cosméticos Naturais</p></div>
-      <div class="card"><h3>📘 Guia 2</h3><p>Produtos de Limpeza</p></div>
-      <div class="card"><h3>📘 Guia 3</h3><p>Casa Perfumada</p></div>
-      <div class="card"><h3>📘 Guia 4</h3><p>Vendas e Lucro</p></div>
-      <div class="card"><h3>📘 Guia 5</h3><p>Fórmulas Premium</p></div>
-      <div class="card"><h3>🎁 Bônus</h3><p>Checklist + Matérias-primas</p></div>
+    <div class="grid package-grid">
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>📘 Guia 1</h3><span class="feature-toggle">+</span></div>
+        <p>Cosméticos Naturais</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Shampoo natural</li>
+            <li>✔ Sabonete líquido</li>
+            <li>✔ Hidratante corporal</li>
+            <li>✔ Condicionador caseiro</li>
+            <li>✔ Receitas simples para uso diário</li>
+          </ul>
+          <div class="feature-trigger">💡 Ideal para quem quer cuidar da pele e do cabelo com opções mais naturais e econômicas.</div>
+        </div>
+      </div>
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>📘 Guia 2</h3><span class="feature-toggle">+</span></div>
+        <p>Produtos de Limpeza</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Detergente caseiro</li>
+            <li>✔ Multiuso</li>
+            <li>✔ Sabão líquido</li>
+            <li>✔ Desinfetante</li>
+            <li>✔ Fórmulas para economizar no mercado</li>
+          </ul>
+          <div class="feature-trigger">💡 Produtos que a casa usa toda semana. É aqui que muita gente sente a economia mais rápido.</div>
+        </div>
+      </div>
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>📘 Guia 3</h3><span class="feature-toggle">+</span></div>
+        <p>Casa Perfumada</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Água perfumada</li>
+            <li>✔ Home spray</li>
+            <li>✔ Difusor de ambiente</li>
+            <li>✔ Sachês aromáticos</li>
+            <li>✔ Aromas para roupas e ambientes</li>
+          </ul>
+          <div class="feature-trigger">💡 Deixe banheiro, sala, quarto e roupas com cheiro agradável sem depender de produtos caros.</div>
+        </div>
+      </div>
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>📘 Guia 4</h3><span class="feature-toggle">+</span></div>
+        <p>Vendas e Lucro</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Como montar kits simples</li>
+            <li>✔ Ideias para vender no bairro</li>
+            <li>✔ Sugestões de precificação</li>
+            <li>✔ Como apresentar os produtos</li>
+            <li>✔ Estratégias para começar sem estoque grande</li>
+          </ul>
+          <div class="feature-trigger">💡 Para quem quer testar renda extra começando pequeno, vendendo para pessoas próximas.</div>
+        </div>
+      </div>
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>📘 Guia 5</h3><span class="feature-toggle">+</span></div>
+        <p>Fórmulas Premium</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Receitas com aparência mais profissional</li>
+            <li>✔ Sugestões de combinação de fragrâncias</li>
+            <li>✔ Ideias para melhorar textura e acabamento</li>
+            <li>✔ Produtos com maior valor percebido</li>
+            <li>✔ Opções para kits e presentes</li>
+          </ul>
+          <div class="feature-trigger">💡 Um toque mais caprichado ajuda a valorizar o produto, seja para uso próprio ou venda.</div>
+        </div>
+      </div>
+      <div class="card feature-card package-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🎁 Bônus</h3><span class="feature-toggle">+</span></div>
+        <p>Checklist + Matérias-primas</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Checklist para começar sem confusão</li>
+            <li>✔ Lista de matérias-primas</li>
+            <li>✔ Organização dos primeiros testes</li>
+            <li>✔ Ideias de embalagens simples</li>
+            <li>✔ Apoio para colocar em prática mais rápido</li>
+          </ul>
+          <div class="feature-trigger">💡 O bônus ajuda você a sair da dúvida e começar com mais segurança, sem comprar coisa desnecessária.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -123,7 +263,6 @@ body{padding-bottom:80px}
       <div class="old">Valor normal: R$47,00</div>
       <div class="price">R$14,99</div>
       <div class="pay">Pagamento único • Acesso imediato • Sem mensalidade</div>
-      <div class="timer"><small>Reserva expira em</small><b id="offerCountdown">60:00</b></div><br>
       <a class="cta" href="https://pay.kiwify.com.br/UECL5zj">COMPRAR AGORA</a>
       <div class="urgency">
         <span class="u">🔥 Lançamento</span>
@@ -137,10 +276,46 @@ body{padding-bottom:80px}
 <section>
   <div class="container reveal">
     <h2 class="section-title">Para quem quer começar sem enrolação</h2>
-    <div class="grid">
-      <div class="card"><h3>🏠 Economia</h3><p>Aprenda produtos úteis para o dia a dia.</p></div>
-      <div class="card"><h3>💵 Renda extra</h3><p>Monte kits simples e teste vendas locais.</p></div>
-      <div class="card"><h3>🚀 Zero experiência</h3><p>Conteúdo direto para iniciantes.</p></div>
+    <div class="grid feature-grid">
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🏠 Economia</h3><span class="feature-toggle">+</span></div>
+        <p>Aprenda produtos úteis para o dia a dia.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Faça produtos que a casa usa toda semana</li>
+            <li>✔ Reduza gastos com limpeza, aromas e cuidados simples</li>
+            <li>✔ Use ingredientes acessíveis e fáceis de encontrar</li>
+            <li>✔ Troque compras caras por receitas caseiras</li>
+          </ul>
+          <div class="feature-trigger">💡 O valor do material pode voltar rápido só evitando algumas compras no mercado.</div>
+        </div>
+      </div>
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>💵 Renda extra</h3><span class="feature-toggle">+</span></div>
+        <p>Monte kits simples e teste vendas locais.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Ideias de kits para vender no bairro</li>
+            <li>✔ Produtos fáceis de oferecer para amigas e vizinhas</li>
+            <li>✔ Sugestões para começar pequeno, sem estoque grande</li>
+            <li>✔ Opções com aparência bonita e valor percebido</li>
+          </ul>
+          <div class="feature-trigger">💡 Comece testando com poucas unidades. Uma venda simples já pode pagar o acesso.</div>
+        </div>
+      </div>
+      <div class="card feature-card" role="button" tabindex="0" aria-expanded="false">
+        <div class="feature-head"><h3>🚀 Zero experiência</h3><span class="feature-toggle">+</span></div>
+        <p>Conteúdo direto para iniciantes.</p>
+        <div class="feature-more" aria-hidden="true">
+          <ul>
+            <li>✔ Passo a passo simples e direto</li>
+            <li>✔ Receitas organizadas para não começar perdido</li>
+            <li>✔ Linguagem fácil, sem termos complicados</li>
+            <li>✔ Ideal para testar em casa mesmo sendo iniciante</li>
+          </ul>
+          <div class="feature-trigger">💡 Você não precisa ter experiência. A ideia é começar com receitas simples e evoluir aos poucos.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -172,7 +347,6 @@ body{padding-bottom:80px}
 </section>
 
 
-<a class="mobile-sticky-cta" href="https://pay.kiwify.com.br/UECL5zj">🟢 ACESSAR POR R$14,99<small>pagamento seguro pela Kiwify</small></a>
 <footer class="footer">
   <p>Método Fábrica Natural © Todos os direitos reservados.</p>
   <p>Produto digital. Resultados variam conforme aplicação, dedicação e contexto de cada pessoa.</p>
@@ -186,7 +360,7 @@ body{padding-bottom:80px}
   const now = Date.now();
   if(!deadline || Number(deadline) < now - duration){ deadline = now + duration; localStorage.setItem(key, deadline); }
   deadline = Number(deadline);
-  const els = [document.getElementById('topCountdown'),document.getElementById('heroCountdown'),document.getElementById('offerCountdown')];
+  const els = [document.getElementById('topCountdown')];
   const pad = n => String(n).padStart(2,'0');
   function tick(){
     const r = Math.max(0, deadline - Date.now());
@@ -215,5 +389,25 @@ document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(btn=>{
   });
 });
 </script>
-</body>
+<script>(function(){const el=document.getElementById('liveCount');if(!el)return;function u(){el.textContent=Math.floor(Math.random()*13)+3;}u();setInterval(u,10000);})();</script>
+<script>(function(){
+  document.querySelectorAll('.feature-card').forEach(function(card){
+    function toggle(){
+      const open = card.classList.toggle('open');
+      card.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const more = card.querySelector('.feature-more');
+      if(more) more.setAttribute('aria-hidden', open ? 'false' : 'true');
+    }
+    card.addEventListener('click', function(e){
+      if(e.target.closest('a')) return;
+      toggle();
+    });
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+})();</script></body>
 </html>
